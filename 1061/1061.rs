@@ -1,5 +1,7 @@
 use std::io;
 
+// https://www.urionlinejudge.com.br/judge/pt/problems/view/1061
+
 macro_rules! read_day {
     ($out:ident) => {
         let mut inner = String::new();
