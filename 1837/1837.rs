@@ -1,4 +1,5 @@
 // https://www.urionlinejudge.com.br/judge/pt/problems/view/1837
+
 use std::io;
 
 macro_rules! read_vec {
@@ -14,7 +15,7 @@ macro_rules! read_vec {
 }
 
 fn main() {
-    read_vec!(v as f32);
+    read_vec!(v as i32);
 
-    println!("{} {}", (v[0] / v[1]).floor(), (v[0] % v[1]));
+    println!("{} {}", v[0].div_euclid(v[1]), v[0].rem_euclid(v[1]));
 }
